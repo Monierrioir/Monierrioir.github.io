@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ayşenur’un Galaksi Sitesi</title>
+  <title>Ayşenur’s Galaxy</title>
+
+  <!-- Star Jedi Font -->
+  <link href="https://fonts.cdnfonts.com/css/star-jedi" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #000;
+      background: url('https://i.gifer.com/7VE.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Star Jedi', sans-serif;
       color: #ffe81f;
-      font-family: 'Arial Black', sans-serif;
       overflow: hidden;
     }
 
@@ -26,7 +31,6 @@
     .scroll-text {
       position: absolute;
       width: 80%;
-      height: auto;
       transform-origin: 50% 100%;
       transform: rotateX(20deg) translateZ(0);
       animation: crawl 45s linear infinite;
@@ -49,19 +53,20 @@
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
-      background: red;
+      background: crimson;
       color: white;
       border: none;
       padding: 15px 40px;
       font-size: 1.2rem;
       border-radius: 10px;
-      box-shadow: 0 0 25px red;
+      box-shadow: 0 0 25px crimson;
       cursor: pointer;
       transition: 0.3s ease;
+      font-family: 'Arial', sans-serif;
     }
 
     .force-button:hover {
-      box-shadow: 0 0 50px red, 0 0 80px crimson;
+      box-shadow: 0 0 50px red, 0 0 80px darkred;
       transform: translateX(-50%) scale(1.05);
     }
   </style>
@@ -70,16 +75,20 @@
 
   <div class="intro">
     <div class="scroll-text">
-      <p>Bir Web Sitesi Uzun Zaman Önce, Çok Uzak Bir Galakside...</p>
-      <p>Bu benim ilk web sitem! Jedi usulü HTML ile kodlanmıştır. 😎</p>
-      <p>Seninle olsun... kodun gücü! 👾</p>
+      <p>A long time ago in a galaxy far, far away...</p>
+      <p>A young developer named Ayşenur took her first steps into the world of code.</p>
+      <p>Armed with curiosity and a keyboard, she set out to build her first digital galaxy.</p>
+      <p>This site is her beginning — simple, bold, and guided by the Force of creativity.</p>
     </div>
   </div>
 
-  <button class="force-button">May the Force Be With You</button>
+  <button class="force-button" onclick="location.href='hakkimda.html'">
+    May the Force Be With You
+  </button>
 
 </body>
 </html>
+
 
 
 
