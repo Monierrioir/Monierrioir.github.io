@@ -2,76 +2,84 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayşenur’un Web Sitesi</title>
+  <title>Ayşenur’un Galaksi Sitesi</title>
   <style>
     body {
-      background-image: url('https://i.gifer.com/7VE.gif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: #ffe81f; /* Star Wars sarısı */
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
       margin: 0;
       padding: 0;
+      background-color: #000;
+      color: #ffe81f;
+      font-family: 'Arial Black', sans-serif;
+      overflow: hidden;
+    }
+
+    .intro {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      perspective: 400px;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      height: 100vh;
-      padding: 20px;
+      align-items: center;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 4px #000;
+    .scroll-text {
+      position: absolute;
+      width: 80%;
+      height: auto;
+      transform-origin: 50% 100%;
+      transform: rotateX(20deg) translateZ(0);
+      animation: crawl 45s linear infinite;
+      text-align: center;
+      font-size: 2em;
+      line-height: 1.5em;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 2px #000;
+    @keyframes crawl {
+      0% {
+        transform: rotateX(20deg) translateY(100%);
+      }
+      100% {
+        transform: rotateX(25deg) translateY(-1000%);
+      }
     }
 
-    .lightsaber {
-      background: linear-gradient(90deg, #00ffcc, #0099ff);
+    .force-button {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: red;
+      color: white;
       border: none;
-      padding: 15px 30px;
-      font-size: 1.1rem;
-      color: black;
-      border-radius: 50px;
-      box-shadow: 0 0 20px #00ffff;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 25px red;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      transition: 0.3s ease;
     }
 
-    .lightsaber:hover {
-      box-shadow: 0 0 40px #00ffff, 0 0 60px #00ccff;
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
-
-      .lightsaber {
-        padding: 12px 24px;
-        font-size: 1rem;
-      }
+    .force-button:hover {
+      box-shadow: 0 0 50px red, 0 0 80px crimson;
+      transform: translateX(-50%) scale(1.05);
     }
   </style>
 </head>
 <body>
-  <h1>Bir Web Sitesi Uzun Zaman Önce, Çok Uzak Bir Galakside...</h1>
-  <p>Bu benim ilk web sitem! Jedi usulü HTML ile kodlanmıştır. 😎</p>
-  <button class="lightsaber">Kod Güçtür</button>
+
+  <div class="intro">
+    <div class="scroll-text">
+      <p>Bir Web Sitesi Uzun Zaman Önce, Çok Uzak Bir Galakside...</p>
+      <p>Bu benim ilk web sitem! Jedi usulü HTML ile kodlanmıştır. 😎</p>
+      <p>Seninle olsun... kodun gücü! 👾</p>
+    </div>
+  </div>
+
+  <button class="force-button">May the Force Be With You</button>
+
 </body>
 </html>
+
 
 
