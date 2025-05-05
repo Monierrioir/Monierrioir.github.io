@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayşenur’un Web Sitesi</title>
+  <style>
+    body {
+      background-image: url('https://i.gifer.com/7VE.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #ffe81f; /* Star Wars sarısı */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .lightsaber {
+      background: linear-gradient(90deg, #00ffcc, #0099ff);
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      color: black;
+      border-radius: 50px;
+      box-shadow: 0 0 20px #00ffff;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .lightsaber:hover {
+      box-shadow: 0 0 40px #00ffff, 0 0 60px #00ccff;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .lightsaber {
+        padding: 12px 24px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Bir Web Sitesi Uzun Zaman Önce, Çok Uzak Bir Galakside...</h1>
+  <p>Bu benim ilk web sitem! Jedi usulü HTML ile kodlanmıştır. 😎</p>
+  <button class="lightsaber">Kod Güçtür</button>
+</body>
+</html>
+
+
